@@ -1,0 +1,38 @@
+--- 
+cors: 
+  allowed-credentials: true
+  allowed-headers: "-*"
+  allowed-methods: "-OPTIONS -GET -POST -PUT -DELETE"
+  allowed-origin: "-*"
+logging: 
+  file: log/taskcore.log
+  level: 
+    com.howtodoinjava: info
+    org.hibernate: info
+    org.springframework.web: info
+    root: info
+server: 
+  port: 8778
+spring: 
+  datasource: 
+    driverClassName: com.mysql.jdbc.Driver
+    password: INETSHOP
+    test-on-borrow: true
+    url: "jdbc:mysql://DVaschenko:3306/etc?autoReconnect=true&createDatabaseIfNotExist=true&useSSL=false"
+    username: INETSHOP
+    validation-query: "SELECT 1"
+  http: 
+    multipart: 
+      max-file-size: 1024KB
+      max-request-size: 1024KB
+  jackson: 
+    time-zone: Europe/Kiev
+  jpa: 
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate: 
+      ddl-auto: none
+      generate-ddl: false
+      globally_quoted_identifiers: true
+    show-sql: true
+token: 
+  expiration-time-mins: 30000

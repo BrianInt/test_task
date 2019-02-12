@@ -1,0 +1,691 @@
+2019-02-12 13:29:30.784  INFO 13920 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 13920 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:29:30.787  INFO 13920 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:29:31.001  INFO 13920 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4cc451f2: startup date [Tue Feb 12 13:29:30 EET 2019]; root of context hierarchy
+2019-02-12 13:29:32.989  INFO 13920 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:29:33.001  INFO 13920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:29:33.002  INFO 13920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:29:33.137  INFO 13920 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:29:33.138  INFO 13920 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2141 ms
+2019-02-12 13:29:33.394  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:29:33.395  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:29:33.395  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:29:33.395  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:29:33.396  INFO 13920 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:29:33.397  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:29:33.904  INFO 13920 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:29:33.920  INFO 13920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:29:33.995  INFO 13920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:29:33.997  INFO 13920 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:29:33.998  INFO 13920 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:29:34.088  INFO 13920 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:29:34.618  INFO 13920 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:29:34.948  INFO 13920 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:29:35.403  WARN 13920 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:29:35.404  INFO 13920 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:29:35.410  INFO 13920 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:29:35.426  INFO 13920 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:29:35.436 ERROR 13920 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:32:38.780  INFO 18796 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 18796 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:32:38.793  INFO 18796 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:32:39.052  INFO 18796 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a94ee4: startup date [Tue Feb 12 13:32:39 EET 2019]; root of context hierarchy
+2019-02-12 13:32:40.749  INFO 18796 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:32:40.759  INFO 18796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:32:40.760  INFO 18796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:32:40.896  INFO 18796 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:32:40.896  INFO 18796 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1847 ms
+2019-02-12 13:32:41.131  INFO 18796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:32:41.132  INFO 18796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:32:41.132  INFO 18796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:32:41.132  INFO 18796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:32:41.133  INFO 18796 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:32:41.133  INFO 18796 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:32:41.512  INFO 18796 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:32:41.525  INFO 18796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:32:41.593  INFO 18796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:32:41.595  INFO 18796 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:32:41.597  INFO 18796 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:32:41.654  INFO 18796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:32:41.993  INFO 18796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:32:42.277  INFO 18796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:32:42.666  WARN 18796 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:32:42.667  INFO 18796 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:32:42.673  INFO 18796 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:32:42.689  INFO 18796 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:32:42.700 ERROR 18796 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:33:13.331  INFO 17184 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 17184 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:33:13.354  INFO 17184 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:33:13.596  INFO 17184 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4cc451f2: startup date [Tue Feb 12 13:33:13 EET 2019]; root of context hierarchy
+2019-02-12 13:33:15.243  INFO 17184 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:33:15.255  INFO 17184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:33:15.256  INFO 17184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:33:15.434  INFO 17184 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:33:15.435  INFO 17184 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1842 ms
+2019-02-12 13:33:15.702  INFO 17184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:33:15.702  INFO 17184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:33:15.702  INFO 17184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:33:15.703  INFO 17184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:33:15.704  INFO 17184 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:33:15.704  INFO 17184 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:33:16.006  INFO 17184 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:33:16.018  INFO 17184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:33:16.087  INFO 17184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:33:16.088  INFO 17184 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:33:16.089  INFO 17184 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:33:16.130  INFO 17184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:33:16.487  INFO 17184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:33:16.758  INFO 17184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:33:17.111  WARN 17184 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:33:17.112  INFO 17184 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:33:17.117  INFO 17184 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:33:17.131  INFO 17184 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:33:17.140 ERROR 17184 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:34:36.403  INFO 17340 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 17340 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:34:36.406  INFO 17340 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:34:36.691  INFO 17340 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a94ee4: startup date [Tue Feb 12 13:34:36 EET 2019]; root of context hierarchy
+2019-02-12 13:34:38.338  INFO 17340 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:34:38.348  INFO 17340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:34:38.349  INFO 17340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:34:38.496  INFO 17340 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:34:38.497  INFO 17340 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1811 ms
+2019-02-12 13:34:38.774  INFO 17340 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:34:38.774  INFO 17340 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:34:38.774  INFO 17340 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:34:38.775  INFO 17340 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:34:38.775  INFO 17340 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:34:38.776  INFO 17340 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:34:39.090  INFO 17340 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:34:39.104  INFO 17340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:34:39.184  INFO 17340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:34:39.185  INFO 17340 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:34:39.186  INFO 17340 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:34:39.239  INFO 17340 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:34:39.597  INFO 17340 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:34:39.870  INFO 17340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:34:40.248  WARN 17340 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:34:40.249  INFO 17340 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:34:40.254  INFO 17340 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:34:40.271  INFO 17340 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:34:40.280 ERROR 17340 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:35:58.752  INFO 18916 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 18916 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:35:58.756  INFO 18916 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:35:59.115  INFO 18916 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a94ee4: startup date [Tue Feb 12 13:35:59 EET 2019]; root of context hierarchy
+2019-02-12 13:36:00.946  INFO 18916 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:36:00.972  INFO 18916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:36:00.974  INFO 18916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:36:01.118  INFO 18916 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:36:01.118  INFO 18916 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2028 ms
+2019-02-12 13:36:01.381  INFO 18916 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:36:01.382  INFO 18916 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:36:01.382  INFO 18916 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:36:01.382  INFO 18916 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:36:01.383  INFO 18916 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:36:01.383  INFO 18916 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:36:01.689  INFO 18916 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:36:01.701  INFO 18916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:36:01.780  INFO 18916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:36:01.782  INFO 18916 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:36:01.784  INFO 18916 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:36:01.842  INFO 18916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:36:02.217  INFO 18916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:36:02.511  INFO 18916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:36:02.895  WARN 18916 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:36:02.896  INFO 18916 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:36:02.912  INFO 18916 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:36:02.933  INFO 18916 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:36:02.944 ERROR 18916 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:37:01.046  INFO 5796 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 5796 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:37:01.050  INFO 5796 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:37:01.384  INFO 5796 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4cc451f2: startup date [Tue Feb 12 13:37:01 EET 2019]; root of context hierarchy
+2019-02-12 13:37:03.522  INFO 5796 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:37:03.534  INFO 5796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:37:03.535  INFO 5796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:37:03.680  INFO 5796 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:37:03.680  INFO 5796 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2303 ms
+2019-02-12 13:37:03.937  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:37:03.938  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:37:03.938  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:37:03.938  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:37:03.939  INFO 5796 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:37:03.939  INFO 5796 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:37:04.272  INFO 5796 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:37:04.285  INFO 5796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:37:04.362  INFO 5796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:37:04.363  INFO 5796 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:37:04.365  INFO 5796 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:37:04.424  INFO 5796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:37:04.790  INFO 5796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:37:05.105  INFO 5796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:37:05.517  WARN 5796 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Object
+2019-02-12 13:37:05.518  INFO 5796 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:37:05.523  INFO 5796 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:37:05.540  INFO 5796 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:37:05.552 ERROR 5796 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Object
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class java.lang.Object
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:37:17.265  INFO 17040 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 17040 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:37:17.270  INFO 17040 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:37:17.559  INFO 17040 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a94ee4: startup date [Tue Feb 12 13:37:17 EET 2019]; root of context hierarchy
+2019-02-12 13:37:19.544  INFO 17040 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:37:19.555  INFO 17040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:37:19.556  INFO 17040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:37:19.700  INFO 17040 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:37:19.700  INFO 17040 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2145 ms
+2019-02-12 13:37:19.961  INFO 17040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:37:19.962  INFO 17040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:37:19.963  INFO 17040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:37:19.963  INFO 17040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:37:19.964  INFO 17040 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:37:19.964  INFO 17040 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:37:20.318  INFO 17040 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:37:20.332  INFO 17040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:37:20.412  INFO 17040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:37:20.414  INFO 17040 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:37:20.415  INFO 17040 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:37:20.471  INFO 17040 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:37:20.846  INFO 17040 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:37:21.135  INFO 17040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:37:21.503  INFO 17040 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 51ca0a1e-8dd5-484a-b29b-338156df435d
+
+2019-02-12 13:37:21.644  INFO 17040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/saveData],methods=[POST]}" onto public com.testTaskData.response.Response com.testTaskData.controller.testDataController.saveData(com.testTaskData.domain.json.DataJson,org.springframework.validation.Errors,javax.servlet.http.HttpServletRequest)
+2019-02-12 13:37:21.646  INFO 17040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getData],methods=[GET],produces=[application/json]}" onto public com.testTaskData.response.Response com.testTaskData.controller.testDataController.saveData(javax.servlet.http.HttpServletRequest)
+2019-02-12 13:37:21.650  INFO 17040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-12 13:37:21.650  INFO 17040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-12 13:37:21.743  INFO 17040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-12 13:37:21.743  INFO 17040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-12 13:37:21.796  INFO 17040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-12 13:37:21.912  INFO 17040 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49ca94a9, org.springframework.security.web.context.SecurityContextPersistenceFilter@3453acd2, org.springframework.security.web.header.HeaderWriterFilter@50ab56e2, org.springframework.security.web.authentication.logout.LogoutFilter@66a53104, com.testTaskData.config.StatelessAuthenticationFilter@9ab310b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56c8e6f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@733ec58b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b40de43, org.springframework.security.web.session.SessionManagementFilter@4733f6f5, org.springframework.security.web.access.ExceptionTranslationFilter@5f59ea8c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9b5f3c7]
+2019-02-12 13:37:22.276  INFO 17040 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a94ee4: startup date [Tue Feb 12 13:37:17 EET 2019]; root of context hierarchy
+2019-02-12 13:37:22.385  WARN 17040 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-02-12 13:37:23.069  INFO 17040 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-12 13:37:23.149  INFO 17040 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8778 (http)
+2019-02-12 13:37:23.155  INFO 17040 --- [main] com.testTaskData.SpringBootWebApp        : Started SpringBootWebApp in 6.418 seconds (JVM running for 7.504)
+2019-02-12 13:40:35.467  INFO 7692 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 7692 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:40:35.474  INFO 7692 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:40:35.901  INFO 7692 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a94ee4: startup date [Tue Feb 12 13:40:35 EET 2019]; root of context hierarchy
+2019-02-12 13:40:37.979  INFO 7692 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:40:37.991  INFO 7692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:40:37.992  INFO 7692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:40:38.122  INFO 7692 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:40:38.122  INFO 7692 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2225 ms
+2019-02-12 13:40:38.511  INFO 7692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:40:38.511  INFO 7692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:40:38.512  INFO 7692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:40:38.512  INFO 7692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:40:38.513  INFO 7692 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:40:38.513  INFO 7692 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:40:38.856  INFO 7692 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:40:38.868  INFO 7692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:40:38.945  INFO 7692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:40:38.947  INFO 7692 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:40:38.948  INFO 7692 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:40:39.008  INFO 7692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:40:39.427  INFO 7692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:40:39.738  INFO 7692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:40:40.133  WARN 7692 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:40:40.134  INFO 7692 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:40:40.139  INFO 7692 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:40:40.155  INFO 7692 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:40:40.163 ERROR 7692 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:41:29.398  INFO 5880 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 5880 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:41:29.403  INFO 5880 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:41:29.792  INFO 5880 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a94ee4: startup date [Tue Feb 12 13:41:29 EET 2019]; root of context hierarchy
+2019-02-12 13:41:31.788  INFO 5880 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:41:31.806  INFO 5880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:41:31.810  INFO 5880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:41:31.995  INFO 5880 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:41:31.996  INFO 5880 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2217 ms
+2019-02-12 13:41:32.262  INFO 5880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:41:32.263  INFO 5880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:41:32.263  INFO 5880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:41:32.263  INFO 5880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:41:32.264  INFO 5880 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:41:32.265  INFO 5880 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:41:32.606  INFO 5880 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:41:32.620  INFO 5880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:41:32.716  INFO 5880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:41:32.718  INFO 5880 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:41:32.720  INFO 5880 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:41:32.764  INFO 5880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:41:33.140  INFO 5880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:41:33.431  INFO 5880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:41:33.818  WARN 5880 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:41:33.819  INFO 5880 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:41:33.824  INFO 5880 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:41:33.840  INFO 5880 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:41:33.849 ERROR 5880 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:42:53.115  INFO 5492 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 5492 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:42:53.122  INFO 5492 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:42:53.528  INFO 5492 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4cc451f2: startup date [Tue Feb 12 13:42:53 EET 2019]; root of context hierarchy
+2019-02-12 13:42:55.640  INFO 5492 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:42:55.654  INFO 5492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:42:55.655  INFO 5492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:42:55.803  INFO 5492 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:42:55.803  INFO 5492 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2278 ms
+2019-02-12 13:42:56.273  INFO 5492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:42:56.274  INFO 5492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:42:56.274  INFO 5492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:42:56.274  INFO 5492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:42:56.275  INFO 5492 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:42:56.275  INFO 5492 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:42:56.711  INFO 5492 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:42:56.726  INFO 5492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:42:56.809  INFO 5492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:42:56.810  INFO 5492 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:42:56.812  INFO 5492 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:42:56.865  INFO 5492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:42:57.251  INFO 5492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:42:57.547  INFO 5492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:42:57.940  WARN 5492 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:42:57.941  INFO 5492 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:42:57.946  INFO 5492 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:42:57.961  INFO 5492 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:42:57.970 ERROR 5492 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+
+2019-02-12 13:44:51.510  INFO 18764 --- [main] com.testTaskData.SpringBootWebApp        : Starting SpringBootWebApp on DVaschenko with PID 18764 (D:\Java\FromGit\task\backend\target\classes started by DVaschenko in D:\Java\FromGit\task\backend)
+2019-02-12 13:44:51.518  INFO 18764 --- [main] com.testTaskData.SpringBootWebApp        : No active profile set, falling back to default profiles: default
+2019-02-12 13:44:51.973  INFO 18764 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a94ee4: startup date [Tue Feb 12 13:44:51 EET 2019]; root of context hierarchy
+2019-02-12 13:44:54.000  INFO 18764 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8778 (http)
+2019-02-12 13:44:54.011  INFO 18764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-12 13:44:54.012  INFO 18764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-12 13:44:54.154  INFO 18764 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-12 13:44:54.154  INFO 18764 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2185 ms
+2019-02-12 13:44:54.421  INFO 18764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-12 13:44:54.422  INFO 18764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-12 13:44:54.422  INFO 18764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-12 13:44:54.422  INFO 18764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-12 13:44:54.423  INFO 18764 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-02-12 13:44:54.423  INFO 18764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-12 13:44:54.746  INFO 18764 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:44:54.761  INFO 18764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: entityManagerFactoryBean
+	...]
+2019-02-12 13:44:54.836  INFO 18764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-12 13:44:54.838  INFO 18764 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-12 13:44:54.839  INFO 18764 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-12 13:44:54.901  INFO 18764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-12 13:44:55.325  INFO 18764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-02-12 13:44:55.644  INFO 18764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:44:56.030  WARN 18764 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+2019-02-12 13:44:56.032  INFO 18764 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'entityManagerFactoryBean'
+2019-02-12 13:44:56.038  INFO 18764 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-12 13:44:56.053  INFO 18764 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-12 13:44:56.061 ERROR 18764 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.testTaskData.SpringBootWebApp.main(SpringBootWebApp.java:9) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.testTaskData.domain.model.TestData
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:173) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:106) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:88) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:200) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263) ~[spring-data-commons-1.13.9.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:101) ~[spring-data-jpa-1.11.9.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+

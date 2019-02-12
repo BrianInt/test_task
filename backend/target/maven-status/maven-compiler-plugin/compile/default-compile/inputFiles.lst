@@ -1,0 +1,10 @@
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\controller\testDataController.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\util\Utils.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\SpringBootWebApp.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\security\CorsConfig.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\security\SpringSecurityConfig.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\session\attribute\SessionData.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\domain\json\DataJson.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\security\StatelessAuthenticationFilter.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\service\testDataService.java
+D:\Java\FromGit\task\backend\src\main\java\com\testTaskData\response\Response.java

@@ -1,0 +1,10 @@
+com\testTaskData\response\Response.class
+com\testTaskData\util\Utils.class
+com\testTaskData\domain\json\DataJson.class
+com\testTaskData\security\SpringSecurityConfig.class
+com\testTaskData\SpringBootWebApp.class
+com\testTaskData\controller\testDataController.class
+com\testTaskData\service\testDataService.class
+com\testTaskData\session\attribute\SessionData.class
+com\testTaskData\security\StatelessAuthenticationFilter.class
+com\testTaskData\security\CorsConfig.class
